@@ -1,0 +1,6 @@
+package com.thymeleaf.curso.boot.domain;
+
+@SuppressWarnings("serial")
+public class Departamento extends Enttity<Long> {
+
+}

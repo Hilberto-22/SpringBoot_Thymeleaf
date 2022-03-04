@@ -1,0 +1,26 @@
+package com.thymeleaf.curso.boot.domain;
+
+import javax.persistence.Entity*;
+
+@SuppressWarnings("serial")
+@Entity
+public class Departamento extends Enttity<Long> {
+
+	
+	String nome;
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	
+	
+	
+	
+	
+	
+}

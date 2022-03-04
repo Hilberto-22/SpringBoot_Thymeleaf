@@ -1,0 +1,5 @@
+package com.thymeleaf.curso.boot.web.controller;
+
+public class CargosController {
+
+}

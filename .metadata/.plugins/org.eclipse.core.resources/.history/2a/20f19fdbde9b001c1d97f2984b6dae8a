@@ -1,0 +1,18 @@
+package com.thymeleaf.curso.boot.domain;
+
+import java.io.Serializable;
+import javax.persistence.Id;
+
+import nonapi.io.github.classgraph.json.Id;
+
+
+public class Enttity <ID extends Serializable> implements Serializable{
+
+	@Id
+	private ID id;
+	
+	
+	private static final long serialVersionUID = 1L;
+
+	p
+}

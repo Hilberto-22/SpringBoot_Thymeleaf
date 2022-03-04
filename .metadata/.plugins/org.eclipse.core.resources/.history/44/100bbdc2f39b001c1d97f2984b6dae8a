@@ -1,0 +1,8 @@
+package com.thymeleaf.curso.boot.domain;
+
+import javax.persistence.*;
+
+@Entity
+public class Funcionario extends Enttity<Long> {
+
+}

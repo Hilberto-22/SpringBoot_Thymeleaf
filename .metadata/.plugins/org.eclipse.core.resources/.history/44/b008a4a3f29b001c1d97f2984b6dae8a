@@ -1,0 +1,31 @@
+package com.thymeleaf.curso.boot.domain;
+
+import javax.persistence.*;
+import javax.persistence.criteria.CriteriaBuilder.In;
+
+@SuppressWarnings("serial")
+@Entity
+@Table(name = "ENDERECOS")
+public class Endereço extends Enttity<Long>{
+
+	@Column(nullable = false)
+	private String logradouro;
+	
+	@Column(nullable = false)
+	private String bairro;
+	
+	@Column(nullable = false)
+	private String cidade;
+	
+	@Column(nullable = false, length = 2)
+	/*Informa para  JPA qual tipo de dado para salvar no banco*/
+	@Enumerated("" )
+	private UF uf;
+	
+	@Column(nullable = false, length = 9)
+	private String cep;
+	
+	@Column(nullable = false, length = 5)
+	private Integer numero;
+	
+}

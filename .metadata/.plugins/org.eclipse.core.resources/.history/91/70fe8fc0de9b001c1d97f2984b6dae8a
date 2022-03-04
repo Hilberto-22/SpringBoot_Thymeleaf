@@ -1,0 +1,12 @@
+package com.thymeleaf.curso.boot.domain;
+
+import java.io.Serializable;
+
+
+public class Enttity <ID extends Serializable> implements Serializable{
+
+
+	private static final long serialVersionUID = 1L;
+
+	p
+}

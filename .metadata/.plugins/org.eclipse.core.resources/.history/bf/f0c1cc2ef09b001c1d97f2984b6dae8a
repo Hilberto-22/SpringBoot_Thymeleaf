@@ -1,0 +1,8 @@
+package com.thymeleaf.curso.boot.domain;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Endereço extends Enttity<Long>{
+
+}

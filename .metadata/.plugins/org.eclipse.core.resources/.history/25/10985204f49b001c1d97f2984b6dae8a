@@ -1,0 +1,19 @@
+package com.thymeleaf.curso.boot.domain;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "FUNCIONARIOS")
+public class Funcionario extends Enttity<Long> {
+ 
+	 @Column(nullable = false, unique = true)
+	 private String nome;
+	
+	
+	
+	
+	
+	
+	
+	
+}

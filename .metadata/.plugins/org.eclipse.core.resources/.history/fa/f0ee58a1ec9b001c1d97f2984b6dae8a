@@ -1,0 +1,10 @@
+package com.thymeleaf.curso.boot.domain;
+
+import javax.persistence.Column;
+
+
+public class Cargo extends Enttity<Long> {
+	
+	@Column(name = "nome", nullable = false, unique = true, length = 60)
+	private String nome;
+}

@@ -1,0 +1,17 @@
+package com.thymeleaf.curso.boot.domain;
+
+import java.io.Serializable;
+
+import javax.annotation.Generated;
+
+import nonapi.io.github.classgraph.json.Id;
+
+
+public class Enttity <ID extends Serializable> implements Serializable{
+	
+	
+	@Id 
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private ID id;
+	
+}

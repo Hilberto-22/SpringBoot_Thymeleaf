@@ -1,0 +1,24 @@
+package com.thymeleaf.curso.boot.domain;
+
+import java.math.BigDecimal;
+
+import javax.persistence.*;
+
+@SuppressWarnings("serial")
+@Entity
+@Table(name = "FUNCIONARIOS")
+public class Funcionario extends Enttity<Long> {
+ 
+	 @Column(nullable = false, unique = true)
+	 private String nome;
+	
+	 @Column(nullable = false, columnDefinition = "DECIMAL(7,2) DEFAULT 0.00")
+	 private BigDecimal salario;
+	
+	
+	
+	
+	
+	
+	
+}

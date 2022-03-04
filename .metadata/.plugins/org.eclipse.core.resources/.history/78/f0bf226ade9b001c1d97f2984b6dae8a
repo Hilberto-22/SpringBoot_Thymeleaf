@@ -1,0 +1,8 @@
+package com.thymeleaf.curso.boot.domain;
+
+import java.io.Serializable;
+
+@
+public class Enttity <ID extends Serializable>{
+
+}

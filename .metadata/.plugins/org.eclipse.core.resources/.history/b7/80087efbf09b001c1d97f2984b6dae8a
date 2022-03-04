@@ -1,0 +1,5 @@
+package com.thymeleaf.curso.boot.domain;
+
+public enum UF {
+
+}

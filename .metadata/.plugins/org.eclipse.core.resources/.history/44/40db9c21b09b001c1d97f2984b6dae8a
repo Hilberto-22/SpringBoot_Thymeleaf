@@ -1,0 +1,10 @@
+package com.thymeleaf.curso.boot.web.controller;
+
+
+@Controller
+public class DepartamentoController {
+
+	
+	
+	
+}

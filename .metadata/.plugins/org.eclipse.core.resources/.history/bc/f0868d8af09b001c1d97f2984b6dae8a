@@ -1,0 +1,9 @@
+package com.thymeleaf.curso.boot.domain;
+
+import javax.persistence.*;
+
+@SuppressWarnings("serial")
+@Entity
+public class Endereço extends Enttity<Long>{
+
+}
