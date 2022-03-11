@@ -5,7 +5,7 @@ import java.util.Objects;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.MappedSuperclass;
-import nonapi.io.github.classgraph.json.Id;
+//import nonapi.io.github.classgraph.json.Id;
 
 /*Super classe para as outras classes*/
 
@@ -14,7 +14,7 @@ import nonapi.io.github.classgraph.json.Id;
 public abstract class Enttity <ID extends Serializable> implements Serializable{
 	
 
-	@Id 
+	@javax.persistence.Id 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
 	private ID id;
