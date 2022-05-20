@@ -9,7 +9,6 @@ import javax.persistence.Table;
 
 /*Anotações para mapeamento*/
 
-@SuppressWarnings("serial")
 @Entity
 @Table(name = "DEPARTAMENTOS")
 public class Departamento extends Enttity<Long> {
@@ -17,6 +16,7 @@ public class Departamento extends Enttity<Long> {
 	@Column(name = "nome", nullable = false, unique = true, length = 60)
 	String nome;
 
+	//cargo é o lado forte do relacionamento pois contém a chave estrangeira
 	@OneToMany(mappedBy = "departamento")
 	private List<Cargo> cargos;
 

@@ -10,7 +10,6 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 
-@SuppressWarnings("serial")
 @Entity
 @Table(name = "CARGOS")
 public class Cargo extends Enttity<Long> {
@@ -30,7 +29,6 @@ public class Cargo extends Enttity<Long> {
 	public List<Funcionario> getFuncionarios() {
 		return funcionarios;
 	}
-
 
 	public void setFuncionarios(List<Funcionario> funcionarios) {
 		this.funcionarios = funcionarios;

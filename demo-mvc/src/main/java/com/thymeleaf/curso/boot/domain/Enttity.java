@@ -5,18 +5,15 @@ import java.util.Objects;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.MappedSuperclass;
-//import nonapi.io.github.classgraph.json.Id;
 
 /*Super classe para as outras classes*/
 
-@SuppressWarnings("serial")
 @MappedSuperclass
 public abstract class Enttity <ID extends Serializable> implements Serializable{
 	
 
 	@javax.persistence.Id 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	
 	private ID id;
 
 	public ID getId() {

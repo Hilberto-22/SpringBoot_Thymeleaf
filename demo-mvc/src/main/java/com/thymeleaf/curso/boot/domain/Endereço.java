@@ -6,7 +6,6 @@ import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.Table;
 
-@SuppressWarnings("serial")
 @Entity
 @Table(name = "ENDERECOS")
 public class Endereço extends Enttity<Long>{
