@@ -31,7 +31,16 @@ body {
 	width: 100%;
 	padding-top: 20px;
 }
-
+.container .form-row{
+    margin-bottom: 10px;
+}
+#cadastro{
+    margin-left: 20px;
+}
+.form-row .labelSetor{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
 /*
  * Sidebar
  */
