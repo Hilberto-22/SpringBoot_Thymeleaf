@@ -2,6 +2,7 @@
 <html layout:decorate="~{layout}">
 <head><meta charset="UTF-8"/></head>
 <body>
+	
 	    <section class="layout-content" layout:fragment="corpo">
 	
 	        <nav class="navbar navbar-expand-md bg-light">
@@ -12,7 +13,7 @@
 	                        <span>Cadastrar Departamentos</span>
 	                    </li>
 	                </ul>
-	                <a class="btn btn-primary btn-md" href="/departamentos/listar" role="button">
+	                <a class="btn btn-primary btn-md" href="/departamentos/listar" role="button" id="listarDepartamentos">
 	                    <span class="oi oi-spreadsheet" title="Listar" aria-hidden="true"></span>
 	                    <span>Listar Departamentos</span>
 	                </a>
@@ -20,15 +21,16 @@
 	        </nav>
 	
 	        <div class="container" id="cadastro">
-	            <form th:action="@{/departamentos/salvar}" th:object="${departamento} "method="POST">
+	            <form th:action="${departamento.id == null} ? @{/departamentos/salvar} : @{/departamentos/editar}" 
+				th:object="${departamento}" method="POST">
 	                <div class="form-row">
 	                    <div class="form-group col-md-6">
-	                        <label for="nome">Departamento</label>
+	                        <label for="nome" class="labelSetor">Departamento</label>
 	                        <input type="text" class="form-control" id="nome"
 	                               placeholder="Nome Departamento" autofocus="autofocus" th:field="*{nome}"/>
 	                    </div>
 	                </div>
-	                <input type="hidden" id="id" name="id" value=""/>
+	                <input type="hidden" id="id" th:field="*{id}"/>
 	                <button type="submit" class="btn btn-primary btn-sm">Salvar</button>
 	            </form>
 	        </div>

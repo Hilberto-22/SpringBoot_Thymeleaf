@@ -41,6 +41,12 @@ body {
     margin-top: 5px;
     margin-bottom: 10px;
 }
+#listarDepartamentos{
+   margin-left: auto;
+}
+#novoDepartamento{
+    margin-left: auto;
+}
 /*
  * Sidebar
  */

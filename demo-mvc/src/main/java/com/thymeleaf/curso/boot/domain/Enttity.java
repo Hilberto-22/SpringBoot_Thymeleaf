@@ -1,18 +1,22 @@
 package com.thymeleaf.curso.boot.domain;
 
 import java.io.Serializable;
-import java.util.Objects;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
 /*Super classe para as outras classes*/
 
 @MappedSuperclass
 public abstract class Enttity <ID extends Serializable> implements Serializable{
-	
 
-	@javax.persistence.Id 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	@Id 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private ID id;
 
@@ -26,12 +30,10 @@ public abstract class Enttity <ID extends Serializable> implements Serializable{
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(id);
-	}
-
-	@Override
-	public String toString() {
-		return "id =" + id;
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		return result;
 	}
 
 	@Override
@@ -39,13 +41,20 @@ public abstract class Enttity <ID extends Serializable> implements Serializable{
 		if (this == obj)
 			return true;
 		if (obj == null)
-			return false; 
+			return false;
 		if (getClass() != obj.getClass())
 			return false;
 		Enttity<?> other = (Enttity<?>) obj;
-		return Objects.equals(id, other.id);
+		if (id == null) {
+			if (other.id != null)
+				return false;
+		} else if (!id.equals(other.id))
+			return false;
+		return true;
 	}
-	
-	 
-	
+
+	@Override
+	public String toString() {
+		return "id = " + id;
+	}	
 }
